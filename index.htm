@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>Home </li>
+            <li>About</li>
+            <li>Contact us</li>
+            <li>Products</li>
+        </ul>
+    <h1 id ="heading" class="your head">Welcome to code with harry</h1>
+    <div id="first" class="c">child1
+        
+        <ul class="this" id="myul">
+            <li>child1</li>
+            <li>child2</li>
+            <li>child3</li>
+            <li>child4</li>
+        </ul>
+        
+    </div>
+        <form action="none.html" method="post">
+            <a href="//codewithharry.com">Code with harry</a>
+            <br>
+            <br>
+            search website:<input type="text" name="hello" id="hello">
+                            <input type="button" id="btn" value="submit">
+        </form>
+    </div>
+        
+<button id="clickIt">Click here</button>
+  
+<p id="hoverPara">Hover over this Text !</p>
+
+<b id="effect"></b>
+
+    <button id="try">Click here</button>
+    <h1 id="text"></h1>
+    <script>
+    document.getElementById("try").addEventListener("click", function(){
+    document.getElementById("text").innerText = "GeeksforGeeks";
+    });
+
+const x = document.getElementById("clickIt");
+const y = document.getElementById("hoverPara");
+
+x.addEventListener("click", RespondClick);
+y.addEventListener("mouseover", RespondMouseOver);
+y.addEventListener("mouseout", RespondMouseOut);
+
+function RespondMouseOver() {
+    document.getElementById("effect").innerHTML +=
+               "MouseOver Event" + "<br>";
+}
+
+function RespondMouseOut() {
+    document.getElementById("effect").innerHTML +=
+              "MouseOut Event" + "<br>";
+}
+
+function RespondClick() {
+    document.getElementById("effect").innerHTML +=
+              "Click Event" + "<br>";
+}
+ 
+</script>
+
+ 
+</body>
+</html>
